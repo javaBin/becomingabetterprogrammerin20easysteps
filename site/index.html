@@ -9,13 +9,17 @@
 
 <body style="background-image: url('bg.gif'); background-repeat: repeat;">
 
-<!--
-<div style="bottom: 0; right: 0; display: none;">
-<audio controls="" loop="" autoplay="">
+
+<div style="bottom: 0; right: 0;">
+<audio id="bgMusic" controls="" loop="" autoplay="" volume="0.1">
   <source src="groovy.mp3" type="audio/mpeg">
 </audio>
 </div>
--->
+<script>
+  var audio = document.getElementById("bgMusic");
+  audio.volume = 0.2;
+</script>
+
 
 <DIV style="width: 800px; margin: 0 auto; margin-top: 20px;">
 
@@ -23,12 +27,15 @@
 
 	<br /> <br />
 	<DIV style="width: 600px; margin: 0 auto;">
-		<img src="home.gif"><img src="guestbook.gif"><img src="contact.gif">
+		<img src="home.gif">><img src="guestbook.gif"><img src="contact.gif">
+		<br>
+		<DIV style="margin: 0 auto; width: 50%"><a href="#" onclick="document.getElementById('bgMusic').muted = true;"><img src="mute.gif"></a>
+		</DIV>
 	</DIV>
 	
 	<br>
 	
-	<iframe width="800" height="600" src="https://www.youtube.com/embed/79bKCwLQwig?autoplay=1" frameborder="0" allowfullscreen></iframe>
+	<iframe width="800" height="600" src="https://www.youtube.com/embed/79bKCwLQwig?autoplay=0" frameborder="0" allowfullscreen></iframe>
 	<p style="color: yellow; font-size:25px">
 		Hi, Bill here. This is my latest educational tape. Due to some problems with RealPlayer some of the movie got lost, <a href="http://www.javazone.no">contact me</a> if you want to buy the full version on vhs or laserdisc.
 	</p>
