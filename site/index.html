@@ -5,19 +5,28 @@
 	<meta name="viewport" content="width=1100">
 
 <head>
+<SCRIPT LANGUAGE="JavaScript" SRC="javascript/JSFX_Layer.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="javascript/JSFX_Mouse.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="javascript/JSFX_TextFlag.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+function JSFX_StartEffects()
+{
+	JSFX.MakeTextFlag("Buy it now!!", "yellow", "Arial", 6);
+}
+</SCRIPT>
 </head>
 
-<body style="background-image: url('bg.gif'); background-repeat: repeat;">
+<body style="background-image: url('bg.gif'); background-repeat: repeat;" onload="JSFX_StartEffects()">
 
 
 <div style="bottom: 0; right: 0;">
-<audio id="bgMusic" controls="" loop="" autoplay="" volume="0.1" style="display: none">
+<audio id="bgMusic" controls=""  autoplay="" volume="0.1" style="display: none">
   <source src="groovy.mp3" type="audio/mpeg">
 </audio>
 </div>
 <script>
   var audio = document.getElementById("bgMusic");
-  audio.volume = 0.2;
+  audio.volume = 0.4;
 </script>
 
 
@@ -27,7 +36,7 @@
 
 	<br /> <br />
 	<DIV style="width: 600px; margin: 0 auto;">
-		<img src="home.gif">><img src="guestbook.gif"><img src="contact.gif">
+		<a href="http://www.javazone.no"><img src="home.gif"></a><a href="http://www.javazone.no"><img src="guestbook.gif"></a><a href="http://www.javazone.no"><img src="contact.gif"></a>
 		<br>
 		<DIV style="margin: 0 auto; width: 50%"><a href="#" onclick="document.getElementById('bgMusic').muted = true;"><img src="mute.gif"></a>
 		</DIV>
@@ -37,7 +46,7 @@
 	
 	<iframe width="800" height="600" src="https://www.youtube.com/embed/79bKCwLQwig?autoplay=0" frameborder="0" allowfullscreen></iframe>
 	<p style="color: yellow; font-size:25px">
-		Hi, Bill here. This is my latest educational tape. Due to some problems with RealPlayer some of the movie got lost, <a href="http://www.javazone.no">contact me</a> if you want to buy the full version on vhs or laserdisc.
+		Hi, Bill here. This is my latest educational tape. Due to some problems with RealPlayer some of the movie got lost, <a href="http://www.javazone.no">contact me</a> if you want to buy the full version on VHS or LaserDisc.
 	</p>
 
 	<DIV style="width: 596px; margin: 0 auto; margin-top: 50px;"><a href="http://javazone.no"><img src="meet.gif"></a></DIV>
@@ -45,7 +54,7 @@
 	
 
 	<p style="color: yellow; font-size: 20px; margin-top: 50px; text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif">COMING SOON</p>
-	<div style="margin: 0 auto; width: 450px"><img src="dating.gif"><img src="thumbsup.gif"><br><img src="satisfaction.gif"></div>
+	<div style="margin: 0 auto; width: 450px"><img src="dating.gif"><img src="tbone2.gif"><img src="thumbsup.gif" width="100px"><img src="satisfaction.gif"></div>
 
 
 </DIV>
